@@ -21,7 +21,7 @@ def classify_triangle(a: int, b: int, c: int):
     elif a == b or b == c:
         return "Isosceles"
 
-    elif a != b and b != c and a**2 + b**2 != c**2:
+    elif a != b and b != c  and a != c and a**2 + b**2 != c**2:
         return "Scalene"
 
     elif a**2 + b**2 == c**2:
