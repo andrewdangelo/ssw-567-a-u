@@ -9,11 +9,17 @@ This file contains the code necessary for the attainment of full credit on the t
 
 
 def classify_triangle(a: int, b: int, c: int):
+    """
+        This function returns a string value with the variation of triangle that would result from the 3 lengths passed into the function as parameters.
 
-    # Equilateral - all sides equal
-    # Isosceles - 2 sides equal
-    # Scalene - No sides equal
-    # Right - a^2 + b^2 = c^2
+        return:
+            If all sides are equal: return "Equilateral"
+            If 2 sides are equal: return "Isosceles"
+            If no sides are equal: return "Scalene"
+            If the side lengths satisfy the pythagorean theorem: return "Right"
+            If none of the side work: return "Invalid"
+
+    """
 
     if a == b and b == c:
         return "Equilateral"
