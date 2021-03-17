@@ -4,4 +4,4 @@ python:
 
 # command to run tests
 script:
- - cd ./hw02a && python -m unittest && cd ../hw04a && python -m unittest
+ - cd ./hw04a && python -m unittest && nosetests --verbosity=2
